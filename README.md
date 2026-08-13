@@ -168,3 +168,5 @@ AegisGrid X is developed primarily on Linux.
 
 MIT License
 # Aegisgrid-x
+
+source .venv/bin/activate
