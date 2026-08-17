@@ -6,7 +6,9 @@ from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.db.base import Base
+from sqlalchemy.orm import relationship
 
+from app.models.user_role import user_role
 
 class User(Base):
     __tablename__ = "users"
@@ -46,4 +48,10 @@ class User(Base):
         DateTime(timezone=True),
         server_default=func.now(),
         nullable=False,
+    )
+
+    roles = relationship(
+        "Role",
+        secondary=user_role,
+        back_populates="users",
     )

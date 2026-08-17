@@ -6,7 +6,8 @@ from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.db.base import Base
-
+from app.models.role_permission import role_permission
+from sqlalchemy.orm import relationship
 
 class Role(Base):
     __tablename__ = "roles"
@@ -26,6 +27,18 @@ class Role(Base):
     description: Mapped[str | None] = mapped_column(
         String(500),
         nullable=True,
+    )
+
+    permissions = relationship(
+        "Permission",
+        secondary=role_permission,
+        back_populates="roles",
+    )
+
+    users = relationship(
+        "User",
+        secondary="user_roles",
+        back_populates="roles",
     )
 
     created_at: Mapped[datetime] = mapped_column(

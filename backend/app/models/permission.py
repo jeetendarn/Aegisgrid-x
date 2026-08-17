@@ -6,6 +6,9 @@ from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.db.base import Base
+from sqlalchemy.orm import relationship
+
+from app.models.role_permission import role_permission
 
 
 class Permission(Base):
@@ -43,3 +46,10 @@ class Permission(Base):
         server_default=func.now(),
         nullable=False,
     )
+
+    roles = relationship(
+        "Role",
+        secondary=role_permission,
+        back_populates="permissions",
+    )
+
