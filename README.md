@@ -171,9 +171,8 @@ MIT License
 # Aegisgrid-x
 
 source .venv/bin/activate
-
-| Module              | Status  |
-| ------------------- | ------  |
+| Module              | Status |
+| ------------------- | ------ |
 | Users               | ✅      |
 | Roles               | ✅      |
 | Permissions         | ✅      |
@@ -184,15 +183,15 @@ source .venv/bin/activate
 | Applications        | ✅      |
 | Incidents           | ✅      |
 | MITRE ATT&CK        | ✅      |
-| Sigma Rules         | ⏳      |
-| YARA Rules          | ⏳      |
+| Sigma Rules         | ✅      |
+| YARA Rules          | 🔄     |
 | Threat Intelligence | ⏳      |
+| Blockchain Evidence | ⏳      |
 | Kafka               | ⏳      |
 | Redis               | ⏳      |
 | Elasticsearch       | ⏳      |
 | Wazuh               | ⏳      |
 | Suricata            | ⏳      |
-| Blockchain Evidence | ⏳      |
 | AI SOC Analyst      | ⏳      |
 | Prometheus          | ⏳      |
 | Grafana             | ⏳      |

@@ -10,6 +10,9 @@ from app.api.v1.endpoints.devices import router as device_router
 from app.api.v1.endpoints.mitre import router as mitre_router
 from app.api.v1.endpoints.sigma import router as sigma_router
 from app.api.v1.endpoints.yara import router as yara_router
+from app.api.v1.endpoints.threat_intelligence import (
+    router as threat_intelligence_router,
+)
 
 app = FastAPI(
     title=settings.app_name,
@@ -44,3 +47,5 @@ app.include_router(
 app.include_router(mitre_router)
 app.include_router(sigma_router)
 app.include_router(yara_router)
+
+app.include_router(threat_intelligence_router)

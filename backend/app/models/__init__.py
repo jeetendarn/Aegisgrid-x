@@ -14,3 +14,4 @@ from app.models.role_permission import role_permission
 from app.models.user_role import user_role
 from app.models.sigma_rule import SigmaRule
 from app.models.yara_rule import YaraRule
+from app.models.threat_intelligence import ThreatIntelligence
