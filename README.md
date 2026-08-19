@@ -172,8 +172,8 @@ MIT License
 
 source .venv/bin/activate
 
-| Module              | Status |
-| ------------------- | ------ |
+| Module              | Status  |
+| ------------------- | ------  |
 | Users               | ✅      |
 | Roles               | ✅      |
 | Permissions         | ✅      |
@@ -183,7 +183,7 @@ source .venv/bin/activate
 | Assets              | ✅      |
 | Applications        | ✅      |
 | Incidents           | ✅      |
-| MITRE ATT&CK        | 🔄     |
+| MITRE ATT&CK        | ✅      |
 | Sigma Rules         | ⏳      |
 | YARA Rules          | ⏳      |
 | Threat Intelligence | ⏳      |
