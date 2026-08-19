@@ -13,6 +13,7 @@ from app.api.v1.endpoints.yara import router as yara_router
 from app.api.v1.endpoints.threat_intelligence import (
     router as threat_intelligence_router,
 )
+from app.api.v1.endpoints.events import router as events_router
 
 app = FastAPI(
     title=settings.app_name,
@@ -49,3 +50,5 @@ app.include_router(sigma_router)
 app.include_router(yara_router)
 
 app.include_router(threat_intelligence_router)
+
+app.include_router(events_router)
