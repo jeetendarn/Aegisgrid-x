@@ -13,3 +13,4 @@ from app.models.mitre_technique import MitreTechnique
 from app.models.role_permission import role_permission
 from app.models.user_role import user_role
 from app.models.sigma_rule import SigmaRule
+from app.models.yara_rule import YaraRule
