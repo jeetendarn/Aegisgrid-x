@@ -7,6 +7,7 @@ from app.core.config import settings
 from app.api.v1.endpoints.branches import router as branch_router
 from app.api.v1.endpoints.networks import router as network_router
 from app.api.v1.endpoints.devices import router as device_router
+from app.api.v1.endpoints.mitre import router as mitre_router
 
 app = FastAPI(
     title=settings.app_name,
@@ -37,3 +38,5 @@ app.include_router(
     prefix="/api/v1",
     tags=["Devices"],
 )
+
+app.include_router(mitre_router)
