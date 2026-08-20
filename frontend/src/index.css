@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #0b1120;
+  color: #e5e7eb;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+}
+
+aside {
+  width: 250px;
+  min-height: 100vh;
+  background: #111827;
+  border-right: 1px solid #1f2937;
+  padding: 24px 14px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 0 12px 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+nav a {
+  color: #9ca3af;
+  text-decoration: none;
+  padding: 11px 12px;
+  border-radius: 7px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #1f2937;
+  color: #fff;
+}
+
+main {
+  flex: 1;
+  padding: 32px;
+}
+
+header h1 {
+  margin-bottom: 6px;
+  font-size: 32px;
+}
+
+header p {
+  color: #9ca3af;
+}
+
+.system-status {
+  margin: 28px 0;
+  padding: 16px;
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 8px;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.module-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.module-card h3 {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.module-count {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 15px 0 5px;
+}
+
+.module-card span {
+  color: #6b7280;
+  font-size: 13px;
+}
